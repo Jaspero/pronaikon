@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/jaspero/pronaikon/compare/v1.0.0...v1.1.0) (2022-05-23)
+
+
+### Features
+
+* **blocks:** commented ngfor ([b1c584b](https://github.com/jaspero/pronaikon/commit/b1c584befff51570f8da75210723e2a4e0fec265))
+
 # 1.0.0 (2022-05-23)
 
 
