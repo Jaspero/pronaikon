@@ -1,5 +1,5 @@
-<div class="category">
-    <!--<img [src]="item.image" alt="">
+<div class="category" *ngFor="let item of data.categories">
+    <img [src]="item.image" alt="">
     <h1>{{item.title}}</h1>
-    <div [innerHTML]="item.text | jpSanitize"></div>-->
+    <div [innerHTML]="item.text | jpSanitize"></div>
 </div>
