@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/jaspero/pronaikon/compare/v1.1.1...v1.2.0) (2022-05-23)
+
+
+### Features
+
+* **blocks:** added contact block ([a60eba1](https://github.com/jaspero/pronaikon/commit/a60eba1a65753e37873b0e9b35fa60d862d41c05))
+
 ## [1.1.1](https://github.com/jaspero/pronaikon/compare/v1.1.0...v1.1.1) (2022-05-23)
 
 
