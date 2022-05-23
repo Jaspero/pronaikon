@@ -1,3 +1,18 @@
+## [1.1.1](https://github.com/jaspero/pronaikon/compare/v1.1.0...v1.1.1) (2022-05-23)
+
+
+### Bug Fixes
+
+* **definitions:** script setup serviceAccountKey path ([73d97c9](https://github.com/jaspero/pronaikon/commit/73d97c96379d7656e3069f99aad8922a5c04dcce))
+* lastPublished check ([0b17db1](https://github.com/jaspero/pronaikon/commit/0b17db15ad9dc8a568e388af8912ea3e4c2b280b))
+
+# [1.1.0](https://github.com/jaspero/pronaikon/compare/v1.0.0...v1.1.0) (2022-05-23)
+
+
+### Features
+
+* **blocks:** commented ngfor ([b1c584b](https://github.com/jaspero/pronaikon/commit/b1c584befff51570f8da75210723e2a4e0fec265))
+
 # 1.0.0 (2022-05-23)
 
 
