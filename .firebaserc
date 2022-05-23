@@ -1,17 +1,17 @@
 {
   "targets": {
-    "jaspero-jms": {
+    "pronaikon-ea42a": {
       "hosting": {
         "cms": [
-          "jaspero-jms"
+          "pronaikon-ea42a"
         ],
         "web": [
-          "jaspero-jms-web"
+          "pronaikon-ea42a-web"
         ]
       }
     }
   },
   "projects": {
-    "default": "jaspero-jms"
+    "default": "pronaikon-ea42a"
   }
 }

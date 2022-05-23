@@ -11,7 +11,7 @@ export const SHARED_CONFIG: {
 		organization: 'Jaspero',
 		repository: 'jms',
 	},
-	projectId: 'jaspero-jms',
-	cloudRegion: 'us-central1',
-	webUrl: 'https://jaspero-jms.firebaseapp.com',
+	projectId: 'pronaikon-ea42a',
+	cloudRegion: 'europe-west1',
+	webUrl: 'https://pronaikon-ea42a.firebaseapp.com',
 };
