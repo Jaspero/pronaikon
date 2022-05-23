@@ -2,37 +2,55 @@ import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 import {Block} from '@jaspero/fb-page-builder';
 import {COMMON_OPTIONS} from '../common-options.const';
 import {CommonBlockComponent, CommonOptions} from '../common.block';
+import {UPLOAD_METHODS} from "@shared/blocks/consts/upload-methods.const";
 
-interface ContentOptions extends CommonOptions {
-  content: string;
+interface HeroOptions extends CommonOptions {
+  image?: string;
+  title?: string;
+  text?: string;
 }
 
 @Block({
-  label: 'Content',
+  label: 'Hero',
   icon: 'article',
   previewValue: {
-    content: '<h1>Custom Title</h1><h2>Custom Subtitle</h2><p>Custom content</p>',
     ...COMMON_OPTIONS.defaults
   },
   form: {
     segments: [
       {
-        title: 'Content',
+        title: 'Hero',
         icon: 'subject',
         fields: [
-          '/content'
+            '/image',
+            '/title',
+            '/text'
         ],
       },
       ...COMMON_OPTIONS.segment
     ],
     schema: {
       properties: {
-        content: {type: 'string'},
+        image: {type: "string"},
+        title: {type: "string"},
+        text: {type: "string"},
         ...COMMON_OPTIONS.properties
       }
     },
     definitions: {
-      content: {
+      image: {
+        label: 'Slika',
+        component: {
+          type: 'image',
+          configuration: {
+            ...UPLOAD_METHODS
+          }
+        }
+      },
+      title: {
+        label: 'Title'
+      },
+      text: {
         label: '',
         component: {
           type: 'tinymce'
@@ -43,12 +61,12 @@ interface ContentOptions extends CommonOptions {
   }
 })
 @Component({
-  selector: 'jms-content',
-  templateUrl: './content.component.html',
+  selector: 'jms-hero',
+  templateUrl: './hero.component.html',
   styleUrls: [
     '../common-styles.scss',
-    './content.component.scss'
+    './hero.component.scss'
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ContentComponent extends CommonBlockComponent<ContentOptions> {}
+export class HeroComponent extends CommonBlockComponent<HeroOptions> {}

@@ -7,9 +7,15 @@ import {LoadClickModule, SanitizeModule} from '@jaspero/ng-helpers';
 import {CommonBlockComponent} from './blocks/common.block';
 import {ContentComponent} from './blocks/content/content.component';
 import {BlockLinkDirective} from './directives/block-link/block-link.directive';
+import {HeroComponent} from "@shared/blocks/blocks/hero/hero.component";
+import {ServicesComponent} from "@shared/blocks/blocks/services/services.component";
+import {GalleryComponent} from "@shared/blocks/blocks/gallery/gallery.component";
 
 const B_COMPONENTS = [
-  ContentComponent
+  ContentComponent,
+  HeroComponent,
+  ServicesComponent,
+  GalleryComponent
 ];
 
 @NgModule({
