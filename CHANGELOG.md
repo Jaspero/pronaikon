@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/jaspero/pronaikon/compare/v1.2.0...v1.3.0) (2022-05-24)
+
+
+### Features
+
+* **blocks:** added footer, added style for hero, added style for gallery ([3f776e8](https://github.com/jaspero/pronaikon/commit/3f776e8a7e0620ec35cf327ed2462ad5407dc3c1))
+
 # [1.2.0](https://github.com/jaspero/pronaikon/compare/v1.1.1...v1.2.0) (2022-05-23)
 
 
