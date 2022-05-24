@@ -1,0 +1,60 @@
+@use 'sass:math';
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  &.nogutter > [class*="col"] { padding: 0; }
+}
+
+[class*="col-"] {
+  padding: 10px;
+}
+
+.col-0 { display: none; }
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    display: block;
+    width: #{math.div($i, 12) * 100%};
+  }
+}
+@media (max-width: 1500px) {
+  .col-l-0 { display: none; }
+  @for $i from 1 through 12 {
+    .col-l-#{$i} {
+      display: block;
+      width: #{math.div($i, 12) * 100%};
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .col-m-0 { display: none; }
+  @for $i from 1 through 12 {
+    .col-m-#{$i} {
+      display: block;
+      width: #{math.div($i, 12) * 100%};
+    }
+  }
+}
+@media (max-width: 900px) {
+  .col-s-0 { display: none; }
+  @for $i from 1 through 12 {
+    .col-s-#{$i} {
+      display: block;
+      width: #{math.div($i, 12) * 100%};
+    }
+  }
+}
+@media (max-width: 600px) {
+  .col-xs-0 { display: none; }
+  @for $i from 1 through 12 {
+    .col-xs-#{$i} {
+      display: block;
+      width: #{math.div($i, 12) * 100%};
+    }
+  }
+}

@@ -23,14 +23,6 @@
 	</div>
 </nav>
 
-<header>
-	<nav>
-		<ul>
-
-		</ul>
-	</nav>
-</header>
-
 <style>
 	.nav {
 		display: flex;

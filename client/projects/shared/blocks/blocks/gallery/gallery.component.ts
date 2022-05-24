@@ -45,7 +45,7 @@ interface GalleryOptions extends CommonOptions {
     },
     definitions: {
       'categories/title': {label: 'Naslov'},
-      'categories/link': {label: 'Naslov Linka'},
+      'categories/link': {label: 'Link'},
       'categories/image': {
         label: 'Slika',
         component: {

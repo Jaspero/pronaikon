@@ -1,5 +1,6 @@
-<div class="category" *ngFor="let item of data.categories">
-    <img [src]="item.image" alt="">
-    <h1>{{item.title}}</h1>
-    <div [innerHTML]="item.text | jpSanitize"></div>
+<div class="grid">
+    <a [href]="item.link" class="category col-6" *ngFor="let item of data.categories">
+        <img class="category-image" [src]="item.image" alt="">
+        <h1 class="category-title">{{item.title}}</h1>
+    </a>
 </div>
