@@ -10,12 +10,14 @@ import {BlockLinkDirective} from './directives/block-link/block-link.directive';
 import {HeroComponent} from "@shared/blocks/blocks/hero/hero.component";
 import {ServicesComponent} from "@shared/blocks/blocks/services/services.component";
 import {GalleryComponent} from "@shared/blocks/blocks/gallery/gallery.component";
+import { ContactComponent } from './blocks/contact/contact.component';
 
 const B_COMPONENTS = [
-  ContentComponent,
-  HeroComponent,
-  ServicesComponent,
-  GalleryComponent
+    ContentComponent,
+    HeroComponent,
+    ServicesComponent,
+    GalleryComponent,
+    ContactComponent
 ];
 
 @NgModule({

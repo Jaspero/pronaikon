@@ -1,3 +1,18 @@
+# [1.2.0](https://github.com/jaspero/pronaikon/compare/v1.1.1...v1.2.0) (2022-05-23)
+
+
+### Features
+
+* **blocks:** added contact block ([a60eba1](https://github.com/jaspero/pronaikon/commit/a60eba1a65753e37873b0e9b35fa60d862d41c05))
+
+## [1.1.1](https://github.com/jaspero/pronaikon/compare/v1.1.0...v1.1.1) (2022-05-23)
+
+
+### Bug Fixes
+
+* **definitions:** script setup serviceAccountKey path ([73d97c9](https://github.com/jaspero/pronaikon/commit/73d97c96379d7656e3069f99aad8922a5c04dcce))
+* lastPublished check ([0b17db1](https://github.com/jaspero/pronaikon/commit/0b17db15ad9dc8a568e388af8912ea3e4c2b280b))
+
 # [1.1.0](https://github.com/jaspero/pronaikon/compare/v1.0.0...v1.1.0) (2022-05-23)
 
 
