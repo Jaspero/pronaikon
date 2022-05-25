@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/jaspero/pronaikon/compare/v1.3.0...v1.3.1) (2022-05-25)
+
+
+### Bug Fixes
+
+* **web:** styles not compiling ([4c5560a](https://github.com/jaspero/pronaikon/commit/4c5560afebb7f3da3e55601fdf08b5f1cb061670))
+
 # [1.3.0](https://github.com/jaspero/pronaikon/compare/v1.2.0...v1.3.0) (2022-05-24)
 
 
