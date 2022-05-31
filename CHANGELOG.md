@@ -1,3 +1,17 @@
+# [1.4.0](https://github.com/jaspero/pronaikon/compare/v1.3.1...v1.4.0) (2022-05-31)
+
+
+### Features
+
+* added blog ([3abc8b9](https://github.com/jaspero/pronaikon/commit/3abc8b9661b13bce682987f0188e8e553e16b38f))
+* added scripts for building elements ([b372066](https://github.com/jaspero/pronaikon/commit/b3720662c13644279347ffcea496bb1e1e4b79bc))
+* blog element fully connected ([5e2c5ef](https://github.com/jaspero/pronaikon/commit/5e2c5efa501e7a7b2643bb303153ccc51ec4977c))
+* **client:** added elements project ([05755d4](https://github.com/jaspero/pronaikon/commit/05755d4a1591e2ae61a73b6feeb54966901b9a4b))
+* connected angular element submit form ([115e5ec](https://github.com/jaspero/pronaikon/commit/115e5ec5abc11562ca9e0cb9b1c891a5bd86f071))
+* sorting posts by publishedOn ([01838fe](https://github.com/jaspero/pronaikon/commit/01838fe9f047b60018e40701521136ab1b25211d))
+* using pure web-components instead of angular elements ([999ce3b](https://github.com/jaspero/pronaikon/commit/999ce3b79b2328cb9b094a02c274bf671ebbf2a2))
+* **web:** simplified web-component detection ([a350eb4](https://github.com/jaspero/pronaikon/commit/a350eb4586ed789dfa08654358c7c025097df5c2))
+
 ## [1.3.1](https://github.com/jaspero/pronaikon/compare/v1.3.0...v1.3.1) (2022-05-25)
 
 
