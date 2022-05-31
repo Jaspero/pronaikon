@@ -1,22 +1,4 @@
-import admin from 'firebase-admin';
-import {join} from 'path';
-
-let environment: any;
-
-if (environment === 'd') {
-	environment = {
-		projectId: 'pronaikon-ea42a'
-	};
-} else {
-	environment = {
-		credential: admin.credential.cert(join(process.cwd(), 'key.json')),
-		databaseURL: `https://pronaikon-ea42a.firebaseio.com`
-	};
-}
-
-admin.initializeApp(environment);
-
-const fs = admin.firestore();
+import {fs} from './firebase-admin';
 
 export async function getDocument<T = any>(collection: string, id: string): Promise<T | null> {
 	const ref = await fs.collection(collection).doc(id).get();
@@ -28,8 +10,8 @@ export async function getDocument<T = any>(collection: string, id: string): Prom
 	return null;
 }
 
-export async function getPage(id: string) {
-	const page = await getDocument('pages', id);
+export async function getPage(id: string, collection = 'pages') {
+	const page = await getDocument(collection, id);
 
 	if (!page || !page.active) {
 		return {
@@ -38,8 +20,33 @@ export async function getPage(id: string) {
 	}
 
 	const {blocks, meta, title, globalStyles} = page;
-	
-	let content = blocks.reduce((acc: string, cur: any) => acc + cur.compiled || '', '');
+	const scripts: string[] = [];
+
+	let content = blocks.reduce((acc: string, cur: any) => {
+
+		const {compiled = ''} = cur;
+
+		let hasPolyfills = false;
+
+		const elementRegex = /<jpe-([\w-]*)/g;
+		const matches = compiled.matchAll(elementRegex);
+
+		for (const match of matches) {
+			if (!hasPolyfills) {
+
+				/**
+				 * TODO:
+				 * Polyfils are loaded here if needed.
+				 */
+
+				hasPolyfills = true;
+			}
+
+			scripts.push(`/elements/${match[1]}.min.js`);
+		}
+
+		return acc + compiled;
+	}, '');
 
 	if (globalStyles) {
 		content += `<style>${globalStyles}</style>`;
@@ -52,6 +59,7 @@ export async function getPage(id: string) {
 				content,
 				meta,
 				title,
+				scripts
 			}
 		}
 	}

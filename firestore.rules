@@ -64,13 +64,18 @@ service cloud.firestore {
     }
 
     match /posts/{item} {
-      allow read: if resource.data.published || admin();
+      allow read: if resource.data.active || admin();
       allow write: if admin();
     }    
 
     match /pages/{item=**} {
       allow read: if true;
       allow write: if admin();
+    }
+
+    match /inquiries/{item} {
+      allow read: if admin();
+      allow write: if true;
     }
 
     match /drive/{item=**} {
