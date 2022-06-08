@@ -17,7 +17,7 @@ export const INQUIRIES_MODULE: Module = {
       segments: [{
         fields: [
           '/name',
-          '/email',
+          '/contact',
 					'/message'
         ]
       }]
@@ -27,8 +27,8 @@ export const INQUIRIES_MODULE: Module = {
         CREATED_ON.column(),
         {key: '/name', label: 'NAME'},
         {
-					key: '/email',
-					label: 'EMAIL',
+					key: '/contact',
+					label: 'CONTACT',
 					pipe: [PipeType.Custom, PipeType.Sanitize],
 					pipeArguments: {
 						0: v => JSX(<a href={`mailto:${v}`}>{v}</a>)
@@ -42,14 +42,14 @@ export const INQUIRIES_MODULE: Module = {
     properties: {
       id: {type: 'string'},
       name: {type: 'string',},
-      email: {type: 'string',},
+      contact: {type: 'string',},
       message: {type: 'string',},
       ...CREATED_ON.property
     }
   },
   definitions: {
     name: {label: 'NAME'},
-		email: {label: 'EMAIL'},
+		contact: {label: 'CONTACT'},
     message: {
       label: 'MESSAGE',
       component: {

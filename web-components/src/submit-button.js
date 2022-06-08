@@ -48,7 +48,7 @@ export default (() => {
 				});
 	
 				fetch(
-					`https://firestore.googleapis.com/v1/projects/jaspero-jms/databases/(default)/documents/inquiries`,
+					`https://firestore.googleapis.com/v1/projects/pronaikon-ea42a/databases/(default)/documents/inquiries`,
 					{
 						method: 'POST',
 						body: JSON.stringify({fields})
