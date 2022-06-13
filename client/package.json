@@ -46,6 +46,7 @@
     "json-pointer": "0.6.2",
     "rxfire": "6.0.3",
     "rxjs": "7.5.5",
+    "svelte-material-icons": "^2.0.2",
     "tinymce": "5.10.0",
     "tslib": "2.4.0",
     "zone.js": "0.11.5"

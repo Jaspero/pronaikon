@@ -1,15 +1,16 @@
-<form ngNativeValidate>
-	<label>
-		<span>Ime</span>
-		<input name="name" required />
+<form class="form" ngNativeValidate>
+	<label for="name" class="field">
+		<input id="name" class="input-field" placeholder="Vaše ime" name="name" required>
+		<span class="label">Vaše ime</span>
 	</label>
-	<label>
-		<span>Kontakt</span>
-		<input name="contact" required />
+	<label for="name" class="field">
+		<input id="mail" class="input-field" placeholder="Vaš e-mail" name="email" type="email" required>
+		<span class="label">Vaš e-mail</span>
 	</label>
-	<label>
-		<span>Poruka</span>
-		<textarea name="message" rows="5" required></textarea>
+	<label for="message" class="field">
+		<textarea id="message" class="input-field" placeholder="Vaša poruka" name="message" rows="5" required></textarea>
+		<span class="label">Vaša poruka</span>
 	</label>
 	<jpe-submit-button label="Pošalji" success="Poruka zaprimljena. Hvala vam!"></jpe-submit-button>
 </form>
+

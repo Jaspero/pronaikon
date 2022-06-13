@@ -1,9 +1,14 @@
 .services {
 	max-width: 1400px;
+	padding-top: 100px;
 
 	&-content {
-		display: flex;
-		flex-direction: column;
+		display: flex !important;
 		justify-content: center;
+		align-items: center;
+	}
+
+	&-img {
+		width: 100%;
 	}
 }

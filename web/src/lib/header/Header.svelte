@@ -1,5 +1,8 @@
 <script lang="ts">
 	export let links: Array<{label: string; link: string}>;
+
+	import Email from 'svelte-material-icons/Mail.svelte';
+	import Phone from 'svelte-material-icons/Phone.svelte';
 </script>
 
 <nav class="nav">
@@ -7,11 +10,11 @@
 	<div class="nav-container">
 		<div class="nav-container-socials">
 			<a href="mailto:pronaikon@gmail.com" class="nav-container-socials-link">
-				<span class="material-icons-outlined">email</span>
+				<Email color="#FFFFFF" size="24px" width="24px" height="24px" viewBox="0 0 24 24" />
 				<span class="nav-container-socials-link-text">pronaikon@gmail.com</span>
 			</a>
 			<a href="tel:+385917777227" class="nav-container-socials-link">
-				<span class="material-icons-outlined">phone</span>
+				<Phone color="#FFFFFF" size="24px" width="24px" height="24px" viewBox="0 0 24 24" />
 				<span class="nav-container-socials-link-text">+385 - 91 - 777 - 7227</span>
 			</a>
 		</div>

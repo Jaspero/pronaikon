@@ -1,0 +1,92 @@
+.form {
+  max-width: 900px;
+  width: 100%;
+  padding: 25px;
+  margin: 100px auto 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid white;
+  box-shadow: 0 0 0 1px transparent;
+  overflow: hidden;
+  min-height: 60px;
+  transition: border .3s, box-shadow .3s;
+
+  &:hover {
+    border-color: #C5A365;
+  }
+  &:focus-within {
+    border-color: #FCD376;
+  }
+  &:not(:first-child) {
+    margin-top: 25px;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgba(0,0,0,.16);
+  -webkit-background-clip: text;
+}
+
+.input-field {
+  display: flex;
+  position: relative;
+  line-height: 16px;
+  font-size: 16px;
+  padding: 12px 0;
+  width: 100%;
+  min-height: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  caret-color: white;
+  font-family: 'Raleway', sans-serif;
+
+  &:not(:placeholder-shown), &:focus:not(:placeholder-shown) {
+    padding: 24px 0 6px;
+  }
+
+  &:not(:placeholder-shown) + .label,
+  &:focus:not(:placeholder-shown) + .label {
+    transform: translateY(-14px);
+    font-size: 14px;
+  }
+}
+
+textarea.input-field {
+  padding: 24px 0 6px;
+
+  &:not(:placeholder-shown) + .label,
+  &:focus:not(:placeholder-shown) + .label {
+    top: 14px;
+    left: 0;
+    width: 100%;
+    background: black;
+    padding: 8px 0 4px;
+  }
+  &:not(:placeholder-shown), &:focus:not(:placeholder-shown) {
+    padding: 30px 0 6px;
+  }
+}
+
+.label {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  color: rgba(255,255,255,.6);
+  transition: transform .3s, font-size .3s;
+  pointer-events: none;
+  user-select: none;
+  font-size: 16px;
+  font-family: Roboto,sans-serif;
+}
+
+::placeholder {
+  visibility: hidden;
+}
