@@ -7,15 +7,15 @@
 
 	&-content {
 		position: absolute;
-		top: 5rem;
-		right: 8rem;
+		top: 8rem;
+		right: 5rem;
 
 		&-title {
+			font-size: 50px;
 
-		}
-
-		&-text {
-			max-width: 40ch;
+			* {
+				margin: 0;
+			}
 		}
 	}
 }

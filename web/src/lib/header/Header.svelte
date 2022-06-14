@@ -10,11 +10,11 @@
 	<div class="nav-container">
 		<div class="nav-container-socials">
 			<a href="mailto:pronaikon@gmail.com" class="nav-container-socials-link">
-				<Email color="#FFFFFF" size="24px" width="24px" height="24px" viewBox="0 0 24 24" />
+				<img src="/mail.svg" alt="mail">
 				<span class="nav-container-socials-link-text">pronaikon@gmail.com</span>
 			</a>
 			<a href="tel:+385917777227" class="nav-container-socials-link">
-				<Phone color="#FFFFFF" size="24px" width="24px" height="24px" viewBox="0 0 24 24" />
+				<img src="/phone.svg" alt="phone">
 				<span class="nav-container-socials-link-text">+385 - 91 - 777 - 7227</span>
 			</a>
 		</div>

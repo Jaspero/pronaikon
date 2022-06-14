@@ -2,12 +2,11 @@ import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 import {Block} from '@jaspero/fb-page-builder';
 import {COMMON_OPTIONS} from '../common-options.const';
 import {CommonBlockComponent, CommonOptions} from '../common.block';
-import {UPLOAD_METHODS} from "@shared/blocks/consts/upload-methods.const";
+import {UPLOAD_METHODS} from '@shared/blocks/consts/upload-methods.const';
 
 interface HeroOptions extends CommonOptions {
   image?: string;
   title?: string;
-  text?: string;
 }
 
 @Block({
@@ -23,17 +22,15 @@ interface HeroOptions extends CommonOptions {
         icon: 'subject',
         fields: [
             '/image',
-            '/title',
-            '/text'
+            '/title'
         ],
       },
       ...COMMON_OPTIONS.segment
     ],
     schema: {
       properties: {
-        image: {type: "string"},
-        title: {type: "string"},
-        text: {type: "string"},
+        image: {type: 'string'},
+        title: {type: 'string'},
         ...COMMON_OPTIONS.properties
       }
     },
@@ -48,10 +45,7 @@ interface HeroOptions extends CommonOptions {
         }
       },
       title: {
-        label: 'Title'
-      },
-      text: {
-        label: '',
+        label: 'Naslov',
         component: {
           type: 'tinymce'
         }

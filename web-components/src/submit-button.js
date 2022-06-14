@@ -10,12 +10,43 @@ export default (() => {
 			super()
 			this.attachShadow({ mode: 'open' })
 			this.shadowRoot.innerHTML = `<style>
-				:host {display:block;}
+				:host {
+					display: block;
+					margin-top: 25px;
+				}
+				
+				button {
+					display: inline-flex;
+					align-items: center;
+					padding: 10px 32px;
+					background-color: #B48A41;
+					color: #FFFFFF;
+					cursor: pointer;
+					border: none;
+					font-weight: 500;
+					font-family: "Mina", sans-serif;
+					text-transform: uppercase;
+					font-size: 14px;
+					transition: .25s;
+				}		
+				
+				button:hover {
+					background-color: #FBD275;
+					color: #000000;
+				}
+				
 				.success {
-					padding: 10px;
-					background-color: #79f547;
-					color: #fff;
-					margin: 10px 0;
+					position: fixed;
+					bottom: 20px;
+					left: 50%;
+					transform: translateX(-50%);
+					white-space: nowrap;
+					color: #4F8A10;
+					background-color: #DFF2BF;
+					font-size: 16px;
+					border-radius: 999px;
+					box-shadow: 0 0px 12px rgb(0 0 0 / 40%);
+					padding: 10px 20px;
 				}
 			</style>`;
 			
