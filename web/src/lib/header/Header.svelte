@@ -1,8 +1,5 @@
 <script lang="ts">
 	export let links: Array<{label: string; link: string}>;
-
-	import Email from 'svelte-material-icons/Mail.svelte';
-	import Phone from 'svelte-material-icons/Phone.svelte';
 </script>
 
 <nav class="nav">
@@ -31,7 +28,7 @@
 		display: flex;
 		justify-content: space-between;
 		height: 120px;
-		padding: 10px;
+		padding: 10px 10px 10px 20px;
 	}
 
 	.nav-container {

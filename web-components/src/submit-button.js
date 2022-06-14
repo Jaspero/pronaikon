@@ -100,7 +100,7 @@ export default (() => {
 
 						setTimeout(() => {
 							this.shadowRoot.removeChild(successEl);
-						}, 50000);
+						}, 5000);
 					})
 					.finally(() => 
 						this.output.removeAttribute('disabled')
