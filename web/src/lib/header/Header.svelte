@@ -3,8 +3,9 @@
 </script>
 
 <nav class="nav">
-	<img src="/pronaikon-logo.svg" alt="">
-	<div class="nav-container">
+	<img src="/pronaikon-logo.svg" class="nav-logo desktop" alt="">
+	<img src="/logo-no-text.svg" class="nav-logo mobile" alt="">
+	<div class="nav-container desktop">
 		<div class="nav-container-socials">
 			<a href="mailto:pronaikon@gmail.com" class="nav-container-socials-link">
 				<img src="/mail.svg" alt="mail">
@@ -25,10 +26,15 @@
 
 <style>
 	.nav {
+		z-index: 2;
+		position: fixed;
+		top: 0;
 		display: flex;
 		justify-content: space-between;
+		width: 100%;
 		height: 120px;
 		padding: 10px 10px 10px 20px;
+		background-color: black;
 	}
 
 	.nav-container {
@@ -77,5 +83,14 @@
 
 	.nav-container-links-link {
 		margin: 0 16px;
+	}
+
+	@media (max-width: 600px) {
+		.nav {
+			height: 80px;
+		}
+		.nav-logo {
+			height: 60px;
+		}
 	}
 </style>

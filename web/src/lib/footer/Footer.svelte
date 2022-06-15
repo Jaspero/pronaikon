@@ -26,7 +26,7 @@
     .footer {
         position: relative;
         overflow: hidden;
-        padding: 100px 0 50px;
+        padding: 50px 0;
         background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
     }
 

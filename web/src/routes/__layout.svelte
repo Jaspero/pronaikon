@@ -21,10 +21,14 @@
 
 <Header {links} />
 
-<main>
+<main class="main">
 	<slot />
 </main>
 
 <Footer />
 
-<style></style>
+<style>
+	.main {
+		padding-top: 120px
+	}
+</style>

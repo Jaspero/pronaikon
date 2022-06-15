@@ -17,3 +17,16 @@ body {
 	margin: 0;
 	background: url("/dark-wood.png");
 }
+
+.mobile {
+	display: none;
+}
+
+@media (max-width: 600px) {
+	.desktop {
+		display: none !important;
+	}
+	.mobile {
+		display: unset;
+	}
+}

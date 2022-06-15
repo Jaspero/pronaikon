@@ -5,15 +5,39 @@
 		display: flex !important;
 		justify-content: center;
 		align-items: center;
-		padding: 0 100px;
+		padding: 100px;
+
+		@media (max-width: 900px) {
+			padding: 100px 100px 0;
+		}
+
+		@media (max-width: 600px) {
+			padding: 100px 25px 0;
+		}
 
 		&-text {
 			font-size: 24px;
+
+			@media (max-width: 900px) {
+				text-align: center;
+			}
+
+			p {
+				margin: 0;
+			}
 		}
 	}
 
 	&-img {
 		width: 100%;
 		padding: 100px 50px;
+
+		@media (max-width: 900px) {
+			padding: 50px 100px 100px;
+		}
+
+		@media (max-width: 600px) {
+			padding: 50px 25px 100px;
+		}
 	}
 }
