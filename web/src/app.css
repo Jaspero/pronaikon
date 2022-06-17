@@ -19,7 +19,7 @@ body {
 }
 
 .mobile {
-	display: none;
+	display: none !important;
 }
 
 @media (max-width: 600px) {
@@ -27,6 +27,6 @@ body {
 		display: none !important;
 	}
 	.mobile {
-		display: unset;
+		display: unset !important;
 	}
 }

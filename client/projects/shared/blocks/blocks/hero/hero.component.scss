@@ -5,14 +5,27 @@
 	width: 100%;
 	min-height: calc(100vh - 120px);
 
+	@media (max-width: 600px) {
+		background-position: top;
+	}
+
 	&-content {
 		position: absolute;
 		top: 25%;
 		right: 8%;
 
+		@media (max-width: 600px) {
+			right: unset;
+			left: 20px;
+		}
+
 		&-title {
 			font-size: calc(16px + 2vw);
 			margin: 0;
+
+			@media (max-width: 600px) {
+				font-size: calc(12px + 2vw);
+			}
 
 			p {
 				margin: 0;

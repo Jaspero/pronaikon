@@ -3,7 +3,10 @@
         <h1>{{data.title}}</h1>
         <div class="services-content-text" [innerHTML]="data.text | jpSanitize"></div>
     </div>
-    <div class="col-6 col-s-12">
-        <img class="services-img" [src]="data.image" alt="">
+    <div class="services-image-container">
+        <img [src]="data.image" alt="" class="services-image">
     </div>
+    <!--<div class="col-6 col-s-12">
+        <img class="services-img" [src]="data.image" alt="">
+    </div>-->
 </div>

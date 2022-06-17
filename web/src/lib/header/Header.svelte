@@ -13,8 +13,12 @@
 </script>
 
 <nav class="nav">
-	<img src="/pronaikon-logo.svg" class="nav-logo desktop" alt="">
-	<img src="/logo-no-text.svg" class="nav-logo mobile" alt="">
+	<a href="/" class="nav-logo desktop">
+		<img src="/pronaikon-logo.svg" class="nav-logo-image" alt="logo">
+	</a>
+	<a href="/" class="nav-logo mobile">
+		<img src="/pronaikon-no-text.svg" class="nav-logo-image" alt="logo">
+	</a>
 	<div class="nav-container desktop">
 		<div class="nav-container-socials">
 			<a href="mailto:pronaikon@gmail.com" class="nav-container-socials-link">
@@ -62,6 +66,14 @@
 		height: 120px;
 		padding: 10px 10px 10px 20px;
 		background-color: black;
+	}
+
+	.nav-logo {
+		height: 100%;
+	}
+
+	.nav-logo-image {
+		height: 100%;
 	}
 
 	.nav-container {
