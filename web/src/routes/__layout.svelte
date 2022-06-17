@@ -31,4 +31,10 @@
 	.main {
 		padding-top: 120px
 	}
+
+	@media (max-width: 600px) {
+		.main {
+			padding-top: 80px;
+		}
+	}
 </style>

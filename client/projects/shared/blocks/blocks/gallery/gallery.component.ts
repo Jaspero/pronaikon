@@ -2,7 +2,7 @@ import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 import {Block} from '@jaspero/fb-page-builder';
 import {COMMON_OPTIONS} from '../common-options.const';
 import {CommonBlockComponent, CommonOptions} from '../common.block';
-import {UPLOAD_METHODS} from "@shared/blocks/consts/upload-methods.const";
+import {UPLOAD_METHODS} from '@shared/blocks/consts/upload-methods.const';
 
 interface GalleryOptions extends CommonOptions {
   categories: Array<{
@@ -10,6 +10,7 @@ interface GalleryOptions extends CommonOptions {
     title?: string;
     link?: string;
   }>;
+  hidden?: boolean;
 }
 
 @Block({
@@ -24,6 +25,11 @@ interface GalleryOptions extends CommonOptions {
         title: (index: number) => index === undefined ? 'Category' : `Category ${index + 1}`,
         array: '/categories',
         fields: ['/image', '/title', '/link']
+      },
+      {
+        title: 'Gallery',
+        icon: 'subject',
+        fields: ['/hidden']
       },
       ...COMMON_OPTIONS.segment
     ],
@@ -40,6 +46,7 @@ interface GalleryOptions extends CommonOptions {
             }
           }
         },
+        hidden: {type: 'boolean'},
         ...COMMON_OPTIONS.properties
       }
     },
@@ -55,6 +62,7 @@ interface GalleryOptions extends CommonOptions {
           }
         }
       },
+      hidden: {label: 'Sakriveno'},
       ...COMMON_OPTIONS.definitions
     }
   }
@@ -68,4 +76,10 @@ interface GalleryOptions extends CommonOptions {
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class GalleryComponent extends CommonBlockComponent<GalleryOptions> {}
+export class GalleryComponent extends CommonBlockComponent<GalleryOptions> {
+  get addedClasses() {
+    return [
+      ...this.data.hidden ? ['hidden'] : [],
+    ];
+  }
+}

@@ -1,5 +1,15 @@
 <script lang="ts">
 	export let links: Array<{label: string; link: string}>;
+
+	let menu = false;
+
+	function toggleMenu() {
+		if (menu === false) {
+			menu = true;
+		} else {
+			menu = false;
+		}
+	}
 </script>
 
 <nav class="nav">
@@ -22,7 +32,24 @@
 			{/each}
 		</div>
 	</div>
+	<div class="nav-container mobile">
+		<button class="menu-trigger" on:click={toggleMenu}>
+			{#if menu}
+				<img src="/close.svg" alt="close" width="30">
+			{:else}
+				<img src="/menu.svg" alt="menu" width="30">
+			{/if}
+		</button>
+	</div>
 </nav>
+
+{#if menu}
+	<nav class="menu-nav" class:active={menu}>
+		{#each links as link}
+			<a class="menu-nav-link" sveltekit:prefetch href={link.link} on:click={toggleMenu}>{link.label}</a>
+		{/each}
+	</nav>
+{/if}
 
 <style>
 	.nav {
@@ -83,6 +110,50 @@
 
 	.nav-container-links-link {
 		margin: 0 16px;
+	}
+
+	.menu-trigger {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: transparent;
+		border: none;
+		outline: none;
+		width: 60px;
+		height: 60px;
+		padding: 0;
+	}
+
+	.menu-nav {
+		z-index: 3;
+		position: fixed;
+		top: 80px;
+		right: 0;
+		width: 300px;
+		height: 100%;
+		display: flex;
+		border-bottom-left-radius: 16px;
+		flex-direction: column;
+		transform: translateX(100%);
+		background-color: #000000;
+		transition: .25s;
+	}
+
+	.menu-nav.active {
+		box-shadow: 0 3px 9px rgba(0,0,0,.2);
+		transform: translateX(0);
+	}
+
+	.menu-nav-link {
+		font-size: 20px;
+		position: relative;
+		display: inline-block;
+		text-decoration: none;
+		padding: 12px 16px;
+		text-align: right;
+		text-transform: uppercase;
+		color: rgba(255,255,255,.7);
+		transition: .25s;
 	}
 
 	@media (max-width: 600px) {

@@ -4,6 +4,10 @@
 	padding: 0 0 31.75% 0;
 	overflow: hidden;
 
+	@media (max-width: 600px) {
+		padding: 0 0 63.5% 0;
+	}
+
 	&:hover {
 		.category-image {
 			transform: scale(1.25);
@@ -41,4 +45,8 @@
 		color: white;
 		margin: 0;
 	}
+}
+
+:host.hidden {
+	display: none;
 }

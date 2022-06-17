@@ -19,7 +19,6 @@
             </a>
         </div>
     </div>
-        <!--<img class="footer-boards" src="/boards.jpeg" alt="">-->
 </footer>
 
 <style>
@@ -76,10 +75,14 @@
         height: 175px;
     }
 
-    .footer-boards {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 50%;
+    @media (max-width: 600px) {
+        .footer-logo {
+            width: 100%;
+            height: unset;
+            padding: 0 20px;
+        }
+        .footer-container-links-link {
+            padding: 12px 20px;
+        }
     }
 </style>
