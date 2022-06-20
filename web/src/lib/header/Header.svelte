@@ -14,9 +14,6 @@
 
 <nav class="nav">
 	<a href="/" class="nav-logo desktop">
-		<img src="/pronaikon-logo.svg" class="nav-logo-image" alt="logo">
-	</a>
-	<a href="/" class="nav-logo mobile">
 		<img src="/pronaikon-no-text.svg" class="nav-logo-image" alt="logo">
 	</a>
 	<div class="nav-container desktop">

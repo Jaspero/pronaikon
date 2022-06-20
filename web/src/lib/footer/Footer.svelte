@@ -19,9 +19,20 @@
             </a>
         </div>
     </div>
+    <div class="footer-jaspero">
+        <div class="footer-flex">
+            Made by &nbsp;
+            <a href="https://jaspero.co/" target="_blank" class="footer-jaspero-link">Jaspero</a>
+        </div>
+    </div>
 </footer>
 
 <style>
+    @font-face {
+        font-family: Gilroy;
+        src: url(Gilroy.woff);
+    }
+
     .footer {
         position: relative;
         overflow: hidden;
@@ -73,6 +84,26 @@
 
     .footer-logo {
         height: 175px;
+    }
+
+    .footer-flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-jaspero {
+        font-size: 16px;
+        font-family: 'Gilroy', sans-serif;
+        margin-top: 30px;
+    }
+
+    .footer-jaspero-link {
+        color: #e65100;
+        text-decoration: none;
+    }
+
+    .footer-jaspero-link:hover {
+        text-decoration: underline;
     }
 
     @media (max-width: 600px) {
