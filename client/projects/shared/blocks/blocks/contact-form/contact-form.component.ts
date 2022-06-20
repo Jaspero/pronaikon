@@ -3,12 +3,10 @@ import {Block} from '@jaspero/fb-page-builder';
 import {COMMON_OPTIONS} from '../common-options.const';
 import {CommonBlockComponent, CommonOptions} from '../common.block';
 import {UPLOAD_METHODS} from '@shared/blocks/consts/upload-methods.const';
-
 interface FormOptions extends CommonOptions {
   image?: string;
   alt?: string;
 }
-
 @Block({
   label: 'CONTACT_FORM',
   icon: 'view_agenda',

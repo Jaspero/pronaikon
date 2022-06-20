@@ -1,8 +1,8 @@
-import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {Block} from '@jaspero/fb-page-builder';
+import {UPLOAD_METHODS} from '@shared/blocks/consts/upload-methods.const';
 import {COMMON_OPTIONS} from '../common-options.const';
 import {CommonBlockComponent, CommonOptions} from '../common.block';
-import {UPLOAD_METHODS} from "@shared/blocks/consts/upload-methods.const";
 
 interface ServicesOptions extends CommonOptions {
   image?: string;
@@ -22,9 +22,9 @@ interface ServicesOptions extends CommonOptions {
         title: 'Services',
         icon: 'subject',
         fields: [
-            '/image',
-            '/title',
-            '/text'
+          '/image',
+          '/title',
+          '/text'
         ],
       },
       ...COMMON_OPTIONS.segment
@@ -69,4 +69,4 @@ interface ServicesOptions extends CommonOptions {
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ServicesComponent extends CommonBlockComponent<ServicesOptions> {}
+export class ServicesComponent extends CommonBlockComponent<ServicesOptions> { }
