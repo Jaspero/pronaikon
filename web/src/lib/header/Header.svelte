@@ -13,7 +13,7 @@
 </script>
 
 <nav class="nav">
-	<a href="/" class="nav-logo desktop">
+	<a href="/" class="nav-logo ">
 		<img src="/pronaikon-no-text.svg" class="nav-logo-image" alt="logo">
 	</a>
 	<div class="nav-container desktop">
