@@ -6,6 +6,7 @@ export const SHARED_CONFIG: {
 	},
   cloudRegion: 'us-central1' | 'us-east1' | 'us-east4' | 'europe-west1' | 'europe-west2' | 'asia-east2' | 'asia-northeast1';
 	webUrl: string;
+	adminEmail: string;
 } = {
 	github: {
 		organization: 'Jaspero',
@@ -14,4 +15,5 @@ export const SHARED_CONFIG: {
 	projectId: 'pronaikon-ea42a',
 	cloudRegion: 'europe-west1',
 	webUrl: 'https://pronaikon-ea42a.web.app',
+	adminEmail: 'info@jaspero.co'
 };
