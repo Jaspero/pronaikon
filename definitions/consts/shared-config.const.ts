@@ -15,5 +15,5 @@ export const SHARED_CONFIG: {
 	projectId: 'pronaikon-ea42a',
 	cloudRegion: 'europe-west1',
 	webUrl: 'https://pronaikon-ea42a.web.app',
-	adminEmail: 'info@jaspero.co'
+	adminEmail: 'maloca.luka@gmail.com'
 };
