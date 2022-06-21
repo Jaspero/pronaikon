@@ -10,6 +10,12 @@
 			menu = false;
 		}
 	}
+
+	function navigate(event, link) {
+		event.preventDefault();
+		document.querySelector(link.link).scrollIntoView({behavior: 'smooth'});
+		menu = false;
+	}
 </script>
 
 <nav class="nav">
@@ -29,7 +35,7 @@
 		</div>
 		<div class="nav-container-links">
 			{#each links as link}
-				<a class="nav-container-links-link" href={link.link}>{link.label}</a>
+				<a class="nav-container-links-link" href={link.link} on:click={(event) => navigate(event, link)}>{link.label}</a>
 			{/each}
 		</div>
 	</div>
@@ -47,7 +53,7 @@
 {#if menu}
 	<nav class="menu-nav" class:active={menu}>
 		{#each links as link}
-			<a class="menu-nav-link" sveltekit:prefetch href={link.link} on:click={toggleMenu}>{link.label}</a>
+			<a class="menu-nav-link" sveltekit:prefetch href={link.link} on:click={(event) => navigate(event, link)}>{link.label}</a>
 		{/each}
 	</nav>
 {/if}

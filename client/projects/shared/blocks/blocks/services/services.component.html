@@ -1,4 +1,4 @@
-<div class="grid services">
+<div class="grid services" [id]="data.elementId">
     <div class="services-content col-6 col-s-12">
         <h1>{{data.title}}</h1>
         <div class="services-content-text" [innerHTML]="data.text | jpSanitize"></div>
@@ -6,7 +6,4 @@
     <div class="services-image-container">
         <img [src]="data.image" alt="" class="services-image">
     </div>
-    <!--<div class="col-6 col-s-12">
-        <img class="services-img" [src]="data.image" alt="">
-    </div>-->
 </div>

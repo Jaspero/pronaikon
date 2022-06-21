@@ -20,28 +20,11 @@ export const COMMON_OPTIONS: {
   },
   segment: [
     {
-      type: 'accordion',
-      title: 'Settings',
-      icon: 'settings',
-      configuration: [
-        {
-          title: 'PB.FORM.BLOCKS.SHARED.STANDARD_OPTIONS',
-          fields: [
-            '/box',
-            '/size',
-            '/verticalAlignment',
-            '/background',
-            '/contained'
-          ]
-        },
-        {
-          title: 'PB.FORM.BLOCKS.SHARED.ADVANCED_OPTIONS',
-          fields: [
-            '/addedClasses',
-            '/elementId',
-            '/additionalStyle'
-          ]
-        },
+      title: 'Postavke',
+      fields: [
+        // '/addedClasses',
+        '/elementId',
+        // '/additionalStyle'
       ]
     }
   ],
@@ -106,7 +89,7 @@ export const COMMON_OPTIONS: {
       }
     },
     addedClasses: {label: 'PB.FORM.BLOCKS.SHARED.CUSTOM_CLASS'},
-    elementId: {label: 'PB.FORM.BLOCKS.SHARED.ELEMENT_ID'},
+    elementId: {label: 'ID Elementa'},
     verticalAlignment: {
       label: 'PB.FORM.BLOCKS.SHARED.VERTICAL_ALIGNMENT',
       component: {
