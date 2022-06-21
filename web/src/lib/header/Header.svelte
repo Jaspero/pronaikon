@@ -13,9 +13,9 @@
 
 	function navigate(event, link) {
 		event.preventDefault();
-		document.querySelector(link.link).scrollIntoView({behavior: 'smooth'});
+		document.querySelector(link.link).scrollIntoView({behavior: 'smooth', block: "center" });
 		menu = false;
-	}
+	}	
 </script>
 
 <nav class="nav">
