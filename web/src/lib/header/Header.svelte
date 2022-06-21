@@ -24,13 +24,13 @@
 	</a>
 	<div class="nav-container desktop">
 		<div class="nav-container-socials">
-			<a href="mailto:pronaikon@gmail.com" class="nav-container-socials-link">
+			<a href="mailto:maloca.luka@gmail.com" class="nav-container-socials-link">
 				<img src="/mail.svg" alt="mail">
-				<span class="nav-container-socials-link-text">pronaikon@gmail.com</span>
+				<span class="nav-container-socials-link-text">maloca.luka@gmail.com</span>
 			</a>
-			<a href="tel:+385917777227" class="nav-container-socials-link">
+			<a href="tel:+385989373133" class="nav-container-socials-link">
 				<img src="/phone.svg" alt="phone">
-				<span class="nav-container-socials-link-text">+385 - 91 - 777 - 7227</span>
+				<span class="nav-container-socials-link-text">098 937 3133</span>
 			</a>
 		</div>
 		<div class="nav-container-links">
