@@ -32,7 +32,7 @@
 		padding-top: 120px
 	}
 
-	@media (max-width: 600px) {
+	@media (max-width: 900px) {
 		.main {
 			padding-top: 80px;
 		}
