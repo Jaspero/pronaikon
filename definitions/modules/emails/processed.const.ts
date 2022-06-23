@@ -1,5 +1,5 @@
 export const PROCESSED = {
-  "layout": "<div class=\"body\">\r\n  <header class=\"header-content\">\r\n    <img class=\"logo\" width=\"140\" src=\"\" />\r\n  </header>\r\n  \r\n  <div class=\"main-content\"></div>\r\n  \r\n  <footer class=\"footer-content\">\r\n    <p>© Pronaik. Sva prava zadržana.</p>\r\n  </footer>\r\n</div>\r\n",
+  "layout": "<div class=\"body\">\r\n  <header class=\"header-content\"></header>\r\n  \r\n  <div class=\"main-content\"></div>\r\n  \r\n  <footer class=\"footer-content\">\r\n    <p>© Pronaik. Sva prava zadržana.</p>\r\n  </footer>\r\n</div>\r\n",
   "segments": {
     "section": "<h2><strong>Naslov</strong></h2>\n<h3><strong>Podnaslov</strong></h3>\n<p>Sadržaj</p>\n<a class=\"button\" href=\"https://pronaikon.hr\" target=\"_blank\"><strong>CTA</strong></a>\n\n"
   },
