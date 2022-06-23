@@ -171,7 +171,7 @@
 		transition: .25s;
 	}
 
-	@media (max-width: 600px) {
+	@media (max-width: 900px) {
 		.nav {
 			height: 80px;
 		}

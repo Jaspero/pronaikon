@@ -22,7 +22,7 @@ body {
 	display: none !important;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
 	.desktop {
 		display: none !important;
 	}
