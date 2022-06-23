@@ -26,16 +26,16 @@ export const AUTOMATIC_EMAILS_COLLECTION = {
             id: 'section',
             name: 'Section',
             content:
-              '<h1>Dear admin,</h1>\n<p>Someone just reached out from the website.</p>',
+              '<h1>Dragi admin,</h1>\n<p>Neko se upravo javio preko web stranice, podaci o upitu su ispod.</p>',
           },
           {
             id: 'section',
             name: 'Section',
             content:
               [
-                '<p>Name: <b>{{name}}</b></p>',
+                '<p>Ime: <b>{{name}}</b></p>',
                 '<p>Email: <b>{{email}}</b></p>',
-                '<p>Message: <b>{{message}}</b></p>',
+                '<p>Poruka: <b>{{message}}</b></p>',
               ].join('\n'),
           },
         ]

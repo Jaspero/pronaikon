@@ -27,7 +27,7 @@ jobs:
           npm --prefix definitions run build
       - name: Install Dependencies
         run: |
-          npm --prefix client ci --force
+          npm --prefix client ci --legacy-peer-deps
       - name: Build
         run: npm run build:cms
       - name: Deploy to Firebase

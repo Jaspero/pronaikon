@@ -9,6 +9,5 @@ export const inquiryCreated = functions
 	.onCreate(async snap => {
 		const data = snap.data() as any;
     const email = new EmailService();
-
 		await email.parseEmail('inquiry-notification-admin', data, SHARED_CONFIG.adminEmail);
 	});
