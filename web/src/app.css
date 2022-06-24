@@ -1,21 +1,21 @@
-*, *:before, *:after {
-	box-sizing: inherit;
-}
-
 html {
 	box-sizing: border-box;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	font-family: "Mina", sans-serif;
 	color: white;
+
 }
 
+*, *:before, *:after {
+	box-sizing: inherit;
+}
 body {
 	overflow-x: hidden;
 	overflow-y: auto;
 	min-height: 100vh;
 	margin: 0;
-	background: url("/dark-wood.png");
+	background-color: black;
 }
 
 .mobile {
