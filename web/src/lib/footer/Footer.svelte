@@ -19,12 +19,6 @@
             </a>
         </div>
     </div>
-    <div class="footer-jaspero">
-        <div class="footer-flex">
-            Made by &nbsp;
-            <a href="https://jaspero.co/" target="_blank" class="footer-jaspero-link">Jaspero</a>
-        </div>
-    </div>
 </footer>
 
 <style>
